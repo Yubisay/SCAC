@@ -15,11 +15,8 @@
      *    IE on Windows Phone and in iOS.
      */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet');
-
 
 html {
-  font-family: 'Roboto Condensed', sans-serif;
   /* 1 */
   line-height: 1.15;
   /* 2 */

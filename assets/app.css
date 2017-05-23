@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 /* GENERAL*/
 
-body { 
+body {
 color:#444344;
 font-weight:lighter
 }
@@ -13,7 +18,7 @@ color:#292826;
  }
 
 .button:hover{
-color:#0a93b5; 
+color:#0a93b5;
  }
 
 h1,h2,h3,h4,h5,h6 {
@@ -40,16 +45,16 @@ color:#747273}
     .size-48 { font-size: 48px; }
     .size-64 { font-size: 64px; }
     .size-96 { font-size: 96px; }
-    
+
 
 /*TOP BAR*/
 
 /* Medium and up */
-@media screen and (min-width: 40em) { 
-    
-    
-    
-    
+@media screen and (min-width: 40em) {
+
+
+
+
 }
 
 .menu > a{
@@ -57,7 +62,7 @@ color:#747273}
 }
 
 .top-bar {
-border-bottom:1px solid #bdbebe;  
+border-bottom:1px solid #bdbebe;
 }
 
 .top-bar, .top-bar ul {
@@ -75,7 +80,7 @@ color:#0a93b5
 .top-bar-logo{
 float:left;
 margin:0 1%;
-margin-top:35px;   
+margin-top:35px;
 }
 
 .top-bar-logo div{
@@ -99,33 +104,33 @@ font-size:1.2em
 }
 
 .lang{
-font-size:0.9em; 
+font-size:0.9em;
 }
 
 .menu > li > a{ padding: 0.7rem 0.9rem}
 .menu > .lang > a{ padding: 0.7rem 0.3rem}
 
 .top-bar-right .menu > ul > li > a:after { content:"/"; padding-left:10px }
-.top-bar-right .menu > ul > li > .last:last-child:after { content: "" 
-    
+.top-bar-right .menu > ul > li > .last:last-child:after { content: ""
+
 }
 
 /*mobile*/
 @media screen and (max-width: 39.9375em) {
-    
+
 .topbar-logo .top-bar-logo  {
  display: none;
  }
-    
+
 /* EDITAR: este debe ocultar en MOBILE*/
 .m-notdisplay{ display: none}
-    
+
 .services ul li {
 line-height:0.9rem;
 }
-    
-    
-    
+
+
+
 }
 
 .topbar-center-logo-mobile {
@@ -161,7 +166,7 @@ transition: width 0.3s;
 top:0;
 right:0;
 border:0;
-outline:0; 
+outline:0;
 width:100%;
 margin:0;
 padding:0px 55px 0px 20px;
@@ -247,7 +252,7 @@ margin:5% 0 ;
 padding: 0;
 min-height:200px;
 display: block;
-list-style: none;   
+list-style: none;
 }
 
 .continents ul li{
@@ -257,20 +262,20 @@ margin:1% auto
 .continents ul li a {
 padding-left:3%;
 color:#959290;
-font-size:1.2rem;    
+font-size:1.2rem;
 }
 
 .continents ul li a:hover {
-color:#0a93b5    
+color:#0a93b5
 }
 
 .continents .button:hover{
-opacity: 0.6   
+opacity: 0.6
 }
 
 .continents section .button {
 letter-spacing: -1px;
-width: 100%    
+width: 100%
 }
 
 .continent-img{
@@ -285,19 +290,19 @@ color:#444344
 
 
 #africa  ul li a {
-border-left: 3px solid #fab454  
+border-left: 3px solid #fab454
 }
 
 #americas  ul li a {
-border-left: 3px solid #ef5d64  
+border-left: 3px solid #ef5d64
 }
 
 #asia  ul li a {
-    border-left: 3px solid #2f9fd1  
+    border-left: 3px solid #2f9fd1
 }
 
 #europe  ul li a {
-border-left: 3px solid #64c3a8  
+border-left: 3px solid #64c3a8
 }
 
 #africa .button,#africa h1 a:hover {
@@ -305,11 +310,11 @@ color:#fab454;
 }
 
 #americas .button, #americas h1 a:hover {
-color:#ef5d64  
+color:#ef5d64
 }
 
 #asia .button, #asia h1 a:hover {
-color:#2f9fd1  
+color:#2f9fd1
 }
 
 #europe .button, #europe h1 a:hover {
@@ -325,7 +330,7 @@ display: inline-block;
 font-family: 'ionicons';
 font-size: 4rem;
 vertical-align: middle;
-padding-right:1%   
+padding-right:1%
 }
 
 .services ul li {
@@ -334,17 +339,17 @@ font-size: 1.3rem}
 
 #featured header  {
 margin: 0;
-padding: 0;  
+padding: 0;
 }
 
 #featured header h1{
 line-height:90%;
 }
-   
+
 
 #featured header span{
 color:#ef5d64;
-font-size: 1.6rem  
+font-size: 1.6rem
 }
 
 
@@ -354,7 +359,7 @@ line-height: 1.9rem;
 margin: 0;
 padding: 0
 }
-   
+
 /* footer */
 
 footer{
@@ -364,21 +369,21 @@ margin:auto 2%;
 padding: 1% 0!important
 }
 
-footer img {  
+footer img {
 max-width:7%!important;
 height: auto;
 opacity: 0.7 ;
 }
 
-footer p {  
+footer p {
 font-size: 1rem;
-padding-left: 5px    
+padding-left: 5px
 }
 
 footer .menu {
     float: left;
     margin: auto 3%
-    
+
 }
 
 footer .menu > li > a{

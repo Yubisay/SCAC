@@ -1,5 +1,4 @@
 ---
-layout: home
 permalink: post1/
 title:  "Welcome to Jekyll!"
 date:   2017-05-04 12:45:27 -0400

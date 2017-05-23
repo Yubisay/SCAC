@@ -45,3 +45,15 @@ prose:
   siteurl: 'http://yubisay.github.io/scac'
   media: 'assets'
   ignore: ['CNAME', '_config.yml', '_config-dev.yml', '*.json', '.gitignore', 'readme.md', '*.xml', 'admin.html', 'node_modules']
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          type: "text"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true

@@ -31,3 +31,11 @@ defaults:
         path: ""
       values:
         layout: "default"
+
+collections:
+  africa:
+    title: 'Africa'
+    output: true
+  americas:
+    title: 'Americas'
+    output: true

@@ -39,3 +39,9 @@ collections:
   americas:
     title: 'Americas'
     output: true
+
+prose:
+  rooturl: ''
+  siteurl: 'http://yubisay.github.io/scac'
+  media: 'assets'
+  ignore: ['CNAME', '_config.yml', '_config-dev.yml', '*.json', '.gitignore', 'readme.md', '*.xml', 'admin.html', 'node_modules']

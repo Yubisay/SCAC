@@ -1,38 +1,32 @@
-title: SCAC - Network Limited
+title: "SCAC - Network Limited"
 
 email: say.arts@gmail.com
 
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  Yubisay
+description: ""
+baseurl: ""
 
-url: "https://yubisay.github.io"
-
-# Build settings
-markdown: kramdown
-
-destination: _site
-
-gems:
-  - jekyll-feed
-  - jekyll-redirect-from
+url: "https://yubisay.github.io/scac"
 
 permalink: :title
 
-exclude: ['CNAME', '_config.yml', '*.json', '.gitignore', 'readme.md', '*.xml', 'admin.html', 'node_modules']
-keep_files: ['sftp-config.json', '.htaccess']
-include: ['.htaccess']
+markdown: kramdown
+
+kramdown:
+  parse_span_html: true
 
 defaults:
     - scope:
         path: ""
       values:
         layout: "default"
+
+exclude: ['CNAME', '_config.yml', '*.json', '.gitignore', 'readme.md', '*.xml', 'admin.html', 'node_modules']
+keep_files: ['sftp-config.json', '.htaccess']
+include: ['.htaccess']
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-feed
 
 prose:
   rooturl: ''

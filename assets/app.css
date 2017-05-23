@@ -134,8 +134,8 @@ line-height:0.9rem;
 }
 
 .topbar-center-logo-mobile {
-background:black url(/images/logo-SCAC.svg) no-repeat top center;
-background-size:40%
+  background: black url(../images/logo-SCAC.svg) no-repeat top center;
+  background-size:40%
 }
 
 .menu-icon{float:left}

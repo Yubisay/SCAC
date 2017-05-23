@@ -127,3 +127,82 @@ prose:
           label: "Nofollow"
           help: "Block crawler following the page"
           value: false
+  _africa:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          type: "text"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Publish Date"
+          value: ""
+          help: "Overrides the date from the name of the post. HH:MM:SS are optional."
+          placeholder: "YYYY-MM-DD HH:MM:SS"
+          type: "date"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          help: "Main URL for the page, see <a href='https://jekyllrb.com/docs/permalinks/'>permalinks</a>. It should start and end with /. Only latin chars are allowed."
+          type: "text"
+          placeholder: "/main-title/"
+      - name: "redirect_from"
+        field:
+          element: "text"
+          label: "Redirect URL"
+          help: "This URL will redirect to this page"
+          type: "text"
+          placeholder: "/alternative-title/"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Language"
+          help: "Choose post language"
+          options:
+            - name: 'English'
+              value: 'en'
+            - name: 'Français'
+              value: 'fr'
+      - name: "ref"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Featured image URL"
+          help: "Insert URL to the image used as featured for the post: facebook, pinterest etc"
+          type: "text"
+          placeholder: "/assets/image.jpg"
+      - name: "meta-title"
+        field:
+          element: "text"
+          label: "Meta Title"
+          help: "Title tag. Keywords first, < 70 chars, no articles/preps/etc."
+          type: "text"
+          placeholder: "[Primary Keyword] - Marketing Blog | TTBA Group | Montreal"
+      - name: "meta-description"
+        field:
+          element: "textarea"
+          label: "Meta Description"
+          help: "Used as description snippet by search engines. < 160 chars"
+          placeholder: ""
+      - name: "noindex"
+        field:
+          element: "checkbox"
+          label: "Noindex"
+          help: "Block search indexing of the page"
+          value: false
+      - name: "nofollow"
+        field:
+          element: "checkbox"
+          label: "Nofollow"
+          help: "Block crawler following the page"
+          value: false

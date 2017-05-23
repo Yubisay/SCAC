@@ -34,14 +34,6 @@ defaults:
       values:
         layout: "default"
 
-collections:
-  africa:
-    title: 'Africa'
-    output: true
-  americas:
-    title: 'Americas'
-    output: true
-
 prose:
   rooturl: ''
   siteurl: 'http://yubisay.github.io/scac'

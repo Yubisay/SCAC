@@ -1,10 +1,11 @@
 <!doctype html>
+
+{% include base.html %}
+
 <html class="no-js" lang="en" dir="ltr">
   <head>
     {% include head.html%}
-
   </head>
-
 
   <body>
     {% include header.html %}
@@ -13,9 +14,9 @@
 
     {% include footer.html %}
 
-    <script src="/assets/jquery.js"></script>
-    <script src="/assets/what-input.js"></script>
-    <script src="/assets/foundation.js"></script>
-    <script src="/assets/app.js"></script>
+    <script src="{{ base }}/assets/jquery.js"></script>
+    <script src="{{ base }}/assets/what-input.js"></script>
+    <script src="{{ base }}/assets/foundation.js"></script>
+    <script src="{{ base }}/assets/app.js"></script>
   </body>
 </html>

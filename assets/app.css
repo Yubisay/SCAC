@@ -6,6 +6,8 @@ html {
 
 /* GENERAL*/
 
+.test{font-size:18px}
+
 body {
 color:#444344;
 font-weight:lighter
@@ -26,12 +28,12 @@ font-weight:lighter;
 }
 
 h1{
- font-size:2.5rem;
+ /*font-size:2.5rem;
  margin:0;
- padding: 0
+ padding: 0*/
 }
 
-p{font-size: 1.3rem;
+p{/*font-size: 1.3rem;*/
 color:#747273}
 
 /* editar: esto es para los iconos*/
@@ -66,7 +68,7 @@ border-bottom:1px solid #bdbebe;
 }
 
 .top-bar, .top-bar ul {
-background:white;
+background-color:white!important;
 }
 
 .menu a {
@@ -134,8 +136,15 @@ line-height:0.9rem;
 }
 
 .topbar-center-logo-mobile {
-  background: black url(../images/logo-SCAC.svg) no-repeat top center;
-  background-size:40%
+  background: url(../images/logo-SCAC.svg) no-repeat top center;
+  background-size:35%;
+  background-position: 50% 20%;
+
+}
+.sticky{
+      width: 100%;
+
+
 }
 
 .menu-icon{float:left}

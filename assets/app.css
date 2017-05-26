@@ -120,17 +120,18 @@ font-size:0.9em;
 /*mobile*/
 @media screen and (max-width: 39.9375em) {
 
-.topbar-logo .top-bar-logo  {
- display: none;
- }
+      .topbar-logo .top-bar-logo  {
+       display: none;
+       }
 
-/* EDITAR: este debe ocultar en MOBILE*/
-.m-notdisplay{ display: none}
+      /* EDITAR: este debe ocultar en MOBILE*/
+      .m-notdisplay{ display: none}
 
-.services ul li {
-line-height:0.9rem;
-}
+      .services ul li {
+      line-height:0.9rem;
+      }
 
+    html{font-size: 110%!important; }
 
 
 }

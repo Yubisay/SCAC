@@ -1,24 +1,39 @@
-//This is just to add/remove menu-open class on body using plain javascript (practice purpose). Jquery code to replace this is: 
+(function($) {
+    $.fn.offCanvasFullScreenOverlay = function(opts) {
+        var config = $.extend({}, {
+            opt: ''
+        }, opts);
+        function init(obj) {
+            var dObj = $(obj);
+            var dMenuTrigger = dObj.find('.menu-trigger');
+            var dMenuCloseBtn = dObj.find('.menu-close');
+            var dNav = dObj.find('.navigation');
 
-// $('.hamburger-menu, .link').click(function () {
-//  $('body').hasClass('menu-open') ? ($('body').removeClass('menu-open')) : ($('body').addClass('menu-open'));
-// });
+            dObj.addClass('on');
 
-//However, don't forget to include jQuery for it to work.
+            dMenuTrigger.click(function(e){
+                e.preventDefault();
+                dNav.toggleClass('off-canvas-hide off-canvas-show');
+            });
 
-function toggleMenu() {
-    var body = document.body;
-        body.className.match(/(?:^|\s)menu-open(?!\S)/) ? body.className = body.className.replace( /(?:^|\s)menu-open(?!\S)/g , '' ) : body.className += "menu-open";
-}
+            dMenuCloseBtn.click(function(e){
+                dNav.toggleClass('off-canvas-hide off-canvas-show');
+            });
 
-window.onload = function() {
-    var hamburger = document.getElementsByClassName('hamburger-menu')[0];
-    var menuLinks = document.getElementsByClassName('link');
-    
-    hamburger.addEventListener( 'click' , toggleMenu );
-    
-    for(var i = 0; i < menuLinks.length; ++i) {
-        var menuLink = menuLinks[i];
-        menuLink.addEventListener( 'click' , toggleMenu );
-    }
-}
+            $(window).resize(function() {
+                if($(window).width() > 640) {
+                    dNav.removeClass('off-canvas-show');
+                } else {
+                    dNav.addClass('off-canvas-hide');
+                }
+            });
+        }
+        this.each(function() {
+            init($(this));
+        });
+        return this;
+    };
+    $(function() {
+        $('.header').offCanvasFullScreenOverlay();
+    });
+})(jQuery);

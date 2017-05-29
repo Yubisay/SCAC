@@ -210,10 +210,14 @@ h1{
  padding: 0*/
 }
 
-p{/*font-size: 1.3rem;*/
+p{font-size: 1.3rem;
 color:#747273}
 
+ul li {font-size: 1.3rem;}
+
 /* editar: esto es para los iconos*/
+
+i {color:#8b8a89;}
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-30 { font-size: 30px; }
@@ -431,7 +435,7 @@ opacity: 0.6
 
 .continents section .button {
 letter-spacing: -1px;
-width: 100%
+
 }
 
 .continent-img{
@@ -494,7 +498,7 @@ padding-right:1%
 
 .services ul li {
 line-height:2.3rem;
-font-size: 1.3rem}
+}
 
 #featured header  {
 margin: 0;
@@ -550,5 +554,20 @@ font-size: 1rem;
 padding: auto 0!important;
 }
 
+/* Search */
+
+.searchbutton {
+
+margin: 0;
+padding: 0;
+border:none;
+}
+
+.top-bar input{
+
+width: 300px;
+margin: 0
+
+}
 
 

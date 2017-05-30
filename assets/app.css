@@ -118,6 +118,11 @@
     -o-transform: translateZ(0);
     transform: translateZ(0);
   }
+
+
+
+
+
 }
 @media screen and (min-width: 641px) {
   .on .menu-close {
@@ -231,7 +236,11 @@ i {color:#8b8a89;}
 /* Medium and up */
 @media screen and (min-width: 40em) {
 
+  
 
+
+.header-fixed{
+  display: none
 
 }
 
@@ -294,17 +303,26 @@ font-size:0.9em;
 }
 
 
-/* Large and up */
-@media screen and (min-width: 64em) {
 
-.header-fixed{
-  display: none
-}
+
 
 }
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
+/* Small only Editar para Ipad y menod */
+@media all and (max-width: 480px)  {
+
+
+
+
+
+input[type='search']{
+
+      height: inherit;
+
+}
+
+
+
 
 .topbar-logo{
   display: none
@@ -317,6 +335,60 @@ font-size:0.9em;
       }
 
     html{font-size: 110%!important; }
+
+
+.continents img {
+
+  float: left;
+  width: 40%;
+  top:0;
+
+}
+
+.continents h1 {
+
+  font-size: 1.3rem
+}
+
+.continents h5 {
+
+  font-size: 0.9rem
+}
+
+
+
+.header-fixed{
+  z-index: 0
+}  
+.header-fixed .menu{
+position: fixed;
+z-index: 3;
+left: 7px
+
+}
+
+
+.header-fixed .menu li{
+
+  width: 100%;
+  padding-top: 7px;
+}
+
+footer .menu{
+
+  display: inline-block;
+  width: 100%;
+
+
+}
+footer .menu{
+
+ text-align: center;
+
+}
+
+
+
 
 
 }
@@ -358,7 +430,11 @@ vertical-align: text-top;
                 .top-bar input {max-width: 100%!important}
 
 
-.orbit-caption {
+.orbit-container {
+height: auto
+}
+
+  .orbit-caption {
 position: absolute;
 top: 0;
 width: 100%;
@@ -399,6 +475,40 @@ margin-top:2%;
 
 /* Continents */
 
+.mobile-continets {
+
+  list-style: none;
+  display: block;
+  margin: 0 5%;
+  padding: 0
+}
+
+.mobile-continets li {
+  float: left;
+  margin: 4px;
+
+
+}
+
+.mobile-continets li a{
+
+width:130px;
+height:90px;
+display:bock;
+color:white;
+text-align: center;
+line-height:1.1rem;
+padding-top: 30px!important
+
+}
+
+
+.menu-close i {
+  color:#fff;
+}
+
+
+
 
 .continents{
 background:#f6f5f6;
@@ -411,7 +521,7 @@ list-style: none;
 margin:5% 0 ;
 padding: 0;
 min-height:200px;
-display: block;
+display: inline-block;
 list-style: none;
 }
 

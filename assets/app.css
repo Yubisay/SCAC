@@ -1,10 +1,205 @@
+
+
+/*******************************************************
+ GENERAL
+ *******************************************************/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+body {
+color:#444344;
+font-weight:lighter
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button {
+background:#fff!important;
+border:1px solid #d0d0cf;
+color:#292826;
+ }
+
+.button:hover{
+color:#0a93b5;
+ }
+
+/*h1,h2,h3,h4,h5,h6 {
+font-weight:lighter;
+}*/
+
+p{
+  color:#747273;
+}
+
+
+/* Search */
+.searchbutton {
+
+margin: 0;
+padding: 0;
+border:none;
+}
+
+.top-bar input{
+
+width: 300px;
+margin: 0
+
+}
+
+
+/* Icons */
+
+i {color:#8b8a89;}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-30 { font-size: 30px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-50 { font-size: 50px; }
+
+
+/* CONTENT */
+
+.services ul {
+list-style: none!important;
+margin: 0
+}
+
+
+.services ul li:before {
+content: '\e876';
+display: inline-block;
+font-family: 'Material Icons';
+/*font-size: 1.5rem;*/
+vertical-align: middle;
+padding-right:1%
+}
+
+
+.continents{
+background:#f6f5f6;
+padding: 1% 0;
+margin: 3% 0
+}
+
+.continents ul{
+list-style: none;
+margin:5% 0 ;
+padding: 0;
+min-height:200px;
+display: inline-block;
+list-style: none;
+}
+
+.continents ul li{
+margin:1% auto
+}
+
+.continents ul li a {
+padding-left:3%;
+color:#959290;
+font-size:1.2rem;
+}
+
+.continents ul li a:hover {
+color:#0a93b5
+}
+
+.continents .button:hover{
+opacity: 0.6
+}
+
+.continents section .button {
+letter-spacing: -1px;
+
+}
+
+
+.continents h1 a {
+color:#444344
+}
+
+
+#africa  ul li a {
+border-left: 3px solid #fab454
+}
+
+#americas  ul li a {
+border-left: 3px solid #ef5d64
+}
+
+#asia  ul li a {
+    border-left: 3px solid #2f9fd1
+}
+
+#europe  ul li a {
+border-left: 3px solid #64c3a8
+}
+
+#africa .button,#africa h1 a:hover {
+color:#fab454;
+}
+
+#americas .button, #americas h1 a:hover {
+color:#ef5d64
+}
+
+#asia .button, #asia h1 a:hover {
+color:#2f9fd1
+}
+
+#europe .button, #europe h1 a:hover {
+color:#64c3a8
+}
 
 
 
-/* MENU TOP BAR */
+.continent-img {
+float: left;
+top:0;
+}
 
+
+/* footer */
+
+footer{
+border-top: 1px solid #c9c5c5;
+border-bottom: 1px solid #c9c5c5;
+margin:auto 2%;
+padding: 1% 0!important
+}
+
+footer img {
+max-width:7%!important;
+height: auto;
+opacity: 0.7 ;
+}
+
+footer p {
+font-size: 1rem;
+padding-left: 5px
+}
+
+
+
+footer .menu > li > a{
+font-size: 1rem;
+padding: auto 0!important;
+}
+
+
+
+
+
+
+
+/*******************************************************
+ MOBILE
+ *******************************************************/
+/* Top-bar menu  */
 
 * {
   -webkit-box-sizing: border-box;
@@ -12,11 +207,46 @@
   box-sizing: border-box;
 }
 
-.logo {
-  font-size: 22px;
+.header {
+padding: 59px; 
 }
-.logo .link {
-  color: #eee;
+
+.on .menu-close {
+    display: none;
+  }
+  .on .menu-trigger {
+    display: none;
+  }
+
+  .navigation {
+    display: inline-block;
+    width: 100%; 
+  }
+
+
+.header-fixed{
+  z-index: 0
+}  
+.header-fixed .menu{
+position: fixed;
+z-index: 3;
+left: 7px
+}
+
+.header-fixed .menu li{
+  width: 100%;
+  padding-top: 7px;
+}
+
+
+input[type='search']{
+      height: inherit;
+
+}
+
+.menu.vertical li a {
+  display: block;
+  text-align: center
 }
 
 /* hide triggers when js is disabled */
@@ -33,13 +263,7 @@
   text-align: center;
   text-decoration: none;
   width: 100%;
-
 }
-
-@media screen and (max-width: 640px) {
-  .header {
-    padding: 59px;
-  }
 
   /* js is enabled */
   .on .logo {
@@ -55,8 +279,7 @@
     border-bottom:1px solid #ccc;
 
     background:#fff url(../images/logo-SCAC.svg) no-repeat top center;
-  background-size:35%;
-  background-position: 50% 20%;
+    background-position: 50% 20%;
 
   }
   .on .menu-trigger {
@@ -120,321 +343,160 @@
   }
 
 
-
-
-
-}
-@media screen and (min-width: 641px) {
-  .on .menu-close {
-    display: none;
-  }
-  .on .menu-trigger {
-    display: none;
-  }
-
-  .navigation {
-    display: inline-block;
-    width: 100%;
-  }
+.menu-close i {
+  color:#fff;
 }
 
 
+/* Display */
+
+    .topbar-logo{
+      display: none
+    }
+
+    .desktop-only{
+      display: none
+    }   
 
 
 
 
+/*******************************************************
+ DESKTOP
+ *******************************************************/
+
+/* Large and up */
+
+@media screen and (min-width: 64em) {
 
 
+.desktop-only{display: block;}
+
+ .topbar-logo{
+      display: block
+    }
+  
+    .header-fixed{
+      display: none
+
+    }
+
+    .menu > a{
+        padding: 0.7rem 0.5rem
+    }
+
+    .top-bar {
+    border-bottom:1px solid #bdbebe;
+    }
+
+    .top-bar, .top-bar ul {
+    background-color:white!important;
+    }
+
+    .menu a {
+    color:#444344
+    }
+
+    .menu a:hover {
+    color:#0a93b5
+    }
+
+    .top-bar-logo{
+    float:left;
+    margin:0 1%;
+    margin-top:35px;
+    }
+
+    .top-bar-logo div{
+    color:#959290;
+    font-size:0.750em;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:2%;
+    letter-spacing:0.2em
+    }
+
+    .topbar-logo .top-bar-logo {
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;
+    }
+
+    .top-bar-left .menu{
+    margin-top:38px;
+    font-size:1.2em
+    }
+
+    .lang{
+    font-size:0.9em;
+    }
+
+    .menu > li > a{ padding: 0.7rem 0.7rem}
+    .menu > .lang > a{ padding: 0.7rem 0.3rem}
+
+    .top-bar-right .menu > ul > li > a:after { content:"/"; padding-left:10px }
+    .top-bar-right .menu > ul > li > .last:last-child:after { content: ""
+
+    }
+
+    .menu .active > a{
+      background:#fff;
+      color:#0a93b5;
+    }
 
 
+    .services ul li:before {
+    font-size: 2.5rem;
+    padding-right:1%
+    }
+
+    .services ul li {
+    line-height:2.3rem;
+    }
 
 
+    .continent-img  {
+
+    display: block;
+    text-align: center;
+    float: none!important;
+    }
 
 
+ .continent-img img {
+
+    
+    width:70%!important;
+    
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-/* GENERAL*/
-
-.test{font-size:18px}
-
-body {
-color:#444344;
-font-weight:lighter
-}
-
-.button {
-background:#fff!important;
-border:1px solid #d0d0cf;
-color:#292826;
- }
-
-.button:hover{
-color:#0a93b5;
- }
-
-h1,h2,h3,h4,h5,h6 {
-font-weight:lighter;
-}
-
-h1{
- /*font-size:2.5rem;
- margin:0;
- padding: 0*/
-}
-
-p{font-size: 1.3rem;
-color:#747273}
+p{font-size: 1.3rem;}
 
 ul li {font-size: 1.3rem;}
 
-/* editar: esto es para los iconos*/
-
-i {color:#8b8a89;}
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-30 { font-size: 30px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-50 { font-size: 50px; }
 
 
-/*TOP BAR*/
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-
-  
-
-
-.header-fixed{
-  display: none
+footer .menu {
+    float: left;
+    margin: auto 3%
 
 }
-
-.menu > a{
-    padding: 0.7rem 0.5rem
-}
-
-.top-bar {
-border-bottom:1px solid #bdbebe;
-}
-
-.top-bar, .top-bar ul {
-background-color:white!important;
-}
-
-.menu a {
-color:#444344
-}
-
-.menu a:hover {
-color:#0a93b5
-}
-
-.top-bar-logo{
-float:left;
-margin:0 1%;
-margin-top:35px;
-}
-
-.top-bar-logo div{
-color:#959290;
-font-size:0.750em;
-text-align: center;
-padding-top:5%;
-padding-bottom:2%;
-letter-spacing:0.2em
-}
-
-.topbar-logo .top-bar-logo {
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
-.top-bar-left .menu{
-margin-top:38px;
-font-size:1.2em
-}
-
-.lang{
-font-size:0.9em;
-}
-
-.menu > li > a{ padding: 0.7rem 0.9rem}
-.menu > .lang > a{ padding: 0.7rem 0.3rem}
-
-.top-bar-right .menu > ul > li > a:after { content:"/"; padding-left:10px }
-.top-bar-right .menu > ul > li > .last:last-child:after { content: ""
-
-}
-
-
-
-
-
-}
-
-/* Small only Editar para Ipad y menod */
-@media all and (max-width: 480px)  {
-
-
-
-
-
-input[type='search']{
-
-      height: inherit;
-
-}
-
-
-
-
-.topbar-logo{
-  display: none
-}
-
-.m-notdisplay{ display: none}
-
-      .services ul li {
-      line-height:0.9rem;
-      }
-
-    html{font-size: 110%!important; }
-
-
-.continents img {
-
-  float: left;
-  width: 40%;
-  top:0;
-
-}
-
-.continents h1 {
-
-  font-size: 1.3rem
-}
-
-.continents h5 {
-
-  font-size: 0.9rem
-}
-
-
-
-.header-fixed{
-  z-index: 0
-}  
-.header-fixed .menu{
-position: fixed;
-z-index: 3;
-left: 7px
-
-}
-
-
-.header-fixed .menu li{
-
-  width: 100%;
-  padding-top: 7px;
-}
-
-footer .menu{
-
-  display: inline-block;
-  width: 100%;
-
-
-}
-footer .menu{
-
- text-align: center;
-
-}
-
-
-
 
 
 }
 
 
+/* search input*/
+.top-bar input {max-width: 100%!important;border:1px solid red;}
 
 
-
-
-
-}
-
-.topbar-center-logo-mobile {
-  background: url(../images/logo-SCAC.svg) no-repeat top center;
-  background-size:45%;
-  background-position: 50% 20%;
-
-}
-.sticky{
-      width: 100%;
-
-
-}
-
-.menu-icon{float:left}
-
-.topbar-center-logo-mobile  {
-vertical-align: text-top;
-}
-
-.menu .active > a {background:white; color:#1779ba}
-
-
-
-
-
-/* Slider - photos */
-
-                .top-bar input {max-width: 100%!important}
-
-
+/* Slider */
 .orbit-container {
 height: auto
 }
 
-  .orbit-caption {
+.orbit-caption {
 position: absolute;
 top: 0;
 width: 100%;
@@ -473,9 +535,122 @@ margin-top:2%;
 }
 
 
-/* Continents */
+/*******************************************************
+ Ipad
+ *******************************************************/
 
-.mobile-continets {
+/* Medium only */
+@media only screen and (min-width: 40.063em) {
+
+
+
+
+
+  .header-fixed .menu {
+    width: 70%;
+    margin: 0 15%;
+  
+   
+  }
+
+  .on .navigation.off-canvas-show{
+  width:60%;
+  left:0;
+  }
+
+
+  h1{
+  font-size:1.8em!important
+  }
+
+.menu.vertical li a{
+  text-align: left;
+}
+
+
+
+  /*.continents .button{
+    width: 40%;
+    border:2px solid red;
+  }
+
+ .continent-img  {
+
+    display: block;
+    text-align: center;
+    float: none!important;
+    }*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Continents ESTO ES CONTENIDO********************************************************************/
+
+/*.mobile-continets {
 
   list-style: none;
   display: block;
@@ -500,115 +675,8 @@ text-align: center;
 line-height:1.1rem;
 padding-top: 30px!important
 
-}
+}*/
 
-
-.menu-close i {
-  color:#fff;
-}
-
-
-
-
-.continents{
-background:#f6f5f6;
-padding: 1% 0;
-margin: 3% 0
-}
-
-.continents ul{
-list-style: none;
-margin:5% 0 ;
-padding: 0;
-min-height:200px;
-display: inline-block;
-list-style: none;
-}
-
-.continents ul li{
-margin:1% auto
-}
-
-.continents ul li a {
-padding-left:3%;
-color:#959290;
-font-size:1.2rem;
-}
-
-.continents ul li a:hover {
-color:#0a93b5
-}
-
-.continents .button:hover{
-opacity: 0.6
-}
-
-.continents section .button {
-letter-spacing: -1px;
-
-}
-
-.continent-img{
-display: block;
-text-align: center;
-}
-
-
-.continents h1 a {
-color:#444344
-}
-
-
-#africa  ul li a {
-border-left: 3px solid #fab454
-}
-
-#americas  ul li a {
-border-left: 3px solid #ef5d64
-}
-
-#asia  ul li a {
-    border-left: 3px solid #2f9fd1
-}
-
-#europe  ul li a {
-border-left: 3px solid #64c3a8
-}
-
-#africa .button,#africa h1 a:hover {
-color:#fab454;
-}
-
-#americas .button, #americas h1 a:hover {
-color:#ef5d64
-}
-
-#asia .button, #asia h1 a:hover {
-color:#2f9fd1
-}
-
-#europe .button, #europe h1 a:hover {
-color:#64c3a8
-}
-
-.services ul {
-list-style: none!important
-}
-
-
-.services ul li:before {
-
-content: '\e876';
-display: inline-block;
-font-family: 'Material Icons';
-font-size: 2.5rem;
-vertical-align: middle;
-padding-right:1%
-}
-
-.services ul li {
-line-height:2.3rem;
-}
 
 #featured header  {
 margin: 0;
@@ -633,51 +701,6 @@ margin: 0;
 padding: 0
 }
 
-/* footer */
 
-footer{
-border-top: 1px solid #c9c5c5;
-border-bottom: 1px solid #c9c5c5;
-margin:auto 2%;
-padding: 1% 0!important
-}
-
-footer img {
-max-width:7%!important;
-height: auto;
-opacity: 0.7 ;
-}
-
-footer p {
-font-size: 1rem;
-padding-left: 5px
-}
-
-footer .menu {
-    float: left;
-    margin: auto 3%
-
-}
-
-footer .menu > li > a{
-font-size: 1rem;
-padding: auto 0!important;
-}
-
-/* Search */
-
-.searchbutton {
-
-margin: 0;
-padding: 0;
-border:none;
-}
-
-.top-bar input{
-
-width: 300px;
-margin: 0
-
-}
 
 

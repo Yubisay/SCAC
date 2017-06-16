@@ -6,6 +6,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+
+
+
+table{
+  border:1px solid #ccc;
+}
+
+
+
 body {
 color:#444344;
 font-weight:lighter
@@ -33,6 +43,13 @@ p{
   color:#747273;
 }
 
+hr{
+max-width:inherit;
+}
+
+.breadcrumbs li{
+  font-size: 1.2rem
+}
 
 /* Search */
 .searchbutton {
@@ -59,6 +76,8 @@ i {color:#8b8a89;}
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 .material-icons.md-50 { font-size: 50px; }
+
+.desktop-only{display: none;}
 
 
 /* CONTENT */
@@ -162,6 +181,28 @@ float: left;
 top:0;
 }
 
+.featured header  {
+margin: 0;
+padding: 0;
+}
+
+.featured header h1{
+line-height:90%;
+}
+
+
+.featured header span{
+color:#ef5d64;
+font-size: 1.6rem
+}
+
+
+.featured header p{
+font-size:1.8rem;
+line-height: 1.9rem;
+margin: 0;
+padding: 0
+}
 
 /* footer */
 
@@ -176,6 +217,7 @@ footer img {
 max-width:7%!important;
 height: auto;
 opacity: 0.7 ;
+margin-left:20px
 }
 
 footer p {
@@ -189,10 +231,6 @@ footer .menu > li > a{
 font-size: 1rem;
 padding: auto 0!important;
 }
-
-
-
-
 
 
 
@@ -347,6 +385,44 @@ input[type='search']{
   color:#fff;
 }
 
+.mobile-continets {
+
+  list-style: none;
+  display: block;
+  margin: 0 5%;
+  padding: 0
+}
+
+.mobile-continets li {
+  float: left;
+  margin: 4px;
+
+
+}
+
+.mobile-continets li a{
+
+width:130px;
+height:90px;
+display:bock;
+color:white;
+text-align: center;
+line-height:1.1rem;
+padding-top: 30px!important
+
+}
+
+
+#back-top {
+  position: fixed;
+  bottom:20px;
+  right: 2%;
+  z-index: 100;
+   }
+
+  #back-top i{
+    color:#0a93b5;
+  }
 
 /* Display */
 
@@ -354,9 +430,7 @@ input[type='search']{
       display: none
     }
 
-    .desktop-only{
-      display: none
-    }   
+  
 
 
 
@@ -368,6 +442,7 @@ input[type='search']{
 /* Large and up */
 
 @media screen and (min-width: 64em) {
+
 
 
 .desktop-only{display: block;}
@@ -444,6 +519,22 @@ input[type='search']{
       color:#0a93b5;
     }
 
+    input[type='search']{
+  width: 300px
+}
+
+h1 {font-size: 2.5rem!important}
+
+
+h1,h2,h3,h4,h5,h6 {
+font-weight:lighter;
+}
+
+.services{
+  margin-bottom: 4%
+}
+
+
 
     .services ul li:before {
     font-size: 2.5rem;
@@ -471,6 +562,7 @@ input[type='search']{
     }
 
 
+
 p{font-size: 1.3rem;}
 
 ul li {font-size: 1.3rem;}
@@ -483,6 +575,10 @@ footer .menu {
 
 }
 
+.menu.vertical li a{
+  text-align: left
+}
+
 
 }
 
@@ -493,7 +589,9 @@ footer .menu {
 
 /* Slider */
 .orbit-container {
-height: auto
+height: auto;
+width: 100%;
+z-index: -3
 }
 
 .orbit-caption {
@@ -519,7 +617,8 @@ font-size:3.2rem}
 .orbit-slide strong {
 display: block;
 margin-top:1%;
-font-size:0.7em
+font-size:0.7em;
+width: 100%
 }
 
 .orbit-slide .button {
@@ -540,9 +639,7 @@ margin-top:2%;
  *******************************************************/
 
 /* Medium only */
-@media only screen and (min-width: 40.063em) {
-
-
+@media only screen and (min-width: 40.063em) and (max-width: 64em)  {
 
 
 
@@ -559,14 +656,16 @@ margin-top:2%;
   }
 
 
-  h1{
-  font-size:1.8em!important
-  }
 
 .menu.vertical li a{
   text-align: left;
 }
 
+h1 {font-size:1.8rem}
+
+.orbit-slide h1{
+  font-size: 2.2em
+}
 
 
   /*.continents .button{
@@ -630,76 +729,6 @@ margin-top:2%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Continents ESTO ES CONTENIDO********************************************************************/
-
-/*.mobile-continets {
-
-  list-style: none;
-  display: block;
-  margin: 0 5%;
-  padding: 0
-}
-
-.mobile-continets li {
-  float: left;
-  margin: 4px;
-
-
-}
-
-.mobile-continets li a{
-
-width:130px;
-height:90px;
-display:bock;
-color:white;
-text-align: center;
-line-height:1.1rem;
-padding-top: 30px!important
-
-}*/
-
-
-#featured header  {
-margin: 0;
-padding: 0;
-}
-
-#featured header h1{
-line-height:90%;
-}
-
-
-#featured header span{
-color:#ef5d64;
-font-size: 1.6rem
-}
-
-
-#featured header p{
-font-size:1.8rem;
-line-height: 1.9rem;
-margin: 0;
-padding: 0
-}
 
 
 

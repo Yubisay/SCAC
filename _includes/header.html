@@ -1,92 +1,79 @@
 
-<!-- mobile nav bar -->
 
-<header class="header header-fixed" role="banner" >
+<header>
 
-    <a href="#menu" class="menu-trigger">
-    <span class="logo" ><i class="material-icons md-50" style="color:#ccc">menu</i></span>
-    </a>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
 
-    <div class="row fullWidth">
-    <ul class="menu" >
-          <li><input type="search" placeholder="Search"></li>
-          <li><button type="button" cbutlass="button searchbutton"><i class="material-icons md-36">search</i></button></li>
+      <a id="logo-container" href="#" class="brand-logo">
+      <img src="{{ base }}/images/logo-SCAC.svg">
+      </a>
+
+        <ul class="main-nav right hide-on-med-and-down"  style="clear: right;" >
+          <li><a href="#" >HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">ADVERTISE WITH US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li class="language" > <a href="#">ENGLISH</a></li>
+          <li class="language"><a href="#">FRANÇAIS</a></li>
         </ul>
-    </div>
 
 
-    <nav id="menu" class="navigation off-canvas-hide" role="navigation">
-        <div style="float:right; display: block; position: absolute; ">
-        <a href="#" class="menu-close" aria-hidden="true" style="font-size: 16px;" ><i class="material-icons md-48 ">close</i></a></div>
-        <a href="index.html" class="link">HOME</a>
-        <a href="#" class="link">RECENT OFFERS</a>
-        <a href="#" class="link">ADD YOUR OFEER </a>
-        <a href="whoarewe.html"  >ABOUT US</a>
-        <a href="FAQ.html" class="link">FAQ</a>
-        <a href="#" class="link">ADVERTISE WITH US</a>
-        <a href="#" class="link">CONTACT US</a>
+        <ul class="main-nav right hide-on-med-and-down" style="clear: right;" >
+          <li><a href="#">RECENT OFFERS</a></li>
+          <li><a href="#">ADD YOUR OFEER </a></li>
+        </ul>
 
+        <ul id="content-nav" class="left hide-on-med-and-down" style="margin-left: 130px">
+          <li><a href="#">AFRICA</a></li>
+          <li><a href="#">AMERICAS</a></li>
+          <li><a href="#">ASIA-PACIFIC</a></li>
+          <li><a href="#">EUROPE</a></li>
+        </ul>
+    
+        
+        <div class="right hide-on-med-and-down " style=";line-height: 14px; clear: right;width:25%;
+        padding: 0" >
+        
+        <form>
+        <div class="input-field">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label> 
+        </div>
+        </form>
+        </div>
 
-      <ul class="mobile-continets">
-      <li><a href="#" class="link " style="background:#cda15a;">AFRICA</a></li>
-      <li><a href="#" class="link " style="background:#c77f8d;">AMERICAS</a></li>
-      <li><a href="#" class="link " style="background:#55b0cf">ASIA-PACIFIC</a></li>
-      <li><a href="#" class="link s" style="background:#6cc2b7;">EUROPE</a></li>
-      </ul>
+        <ul id="nav-mobile" class="side-nav">
+           <li class="title">MENU</li>
+          <li><a href="#">AFRICA</a></li>
+          <li><a href="#">AMERICAS</a></li>
+          <li><a href="#">ASIA-PACIFIC</a></li>
+          <li><a href="#">EUROPE</a></li>
+          <li> &nbsp;</li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">ADVERTISE WITH US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">RECENT OFFERS</a></li>
+          <li><a href="#">ADD YOUR OFEER </a></li>
+           <li> &nbsp;</li>
+            <li><a href="#">ADD YOUR OFEER </a></li>     
+        </ul>
+
+       
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+         <div id="nav-mobile " class="right hide-on-large-only " >
+         <form class="mobile-search">
+         <input  type="text" name="search" placeholder="search">
+         </form>
+         </div>
+
+      </div>
     </nav>
 
 </header>
-
-
-<!-- /mobile nav bar -->
-
-
-
-
-<!-- medium and larger nav bar -->
-  <nav class="top-bar-right desktop-only" >
-
-  <ul class="menu vertical medium-horizontal">
-      <li class="active"  ><a href="#" >HOME</a></li>
-      <li><a href="#">WHO WE ARE</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">ADVERTISE WITH US</a></li>
-      <li><a href="#" class="last">CONTACT US</a></li>
-      <li class="lang active"><a  href="#">ENGLISH</a></li>
-      <li class="last lang"><a   href="#">FRANCAIS</a></li>
-    </ul>
-
-       <ul class="menu align-right" >
-      <li  class="last"><a href="#">ADD YOUR OFEER</a></li>
-    <li><a href="#" >RECENT OFFERS</a></li>
-       </ul>
-
-
-      <!-- search -->
-      <ul class="menu top-bar-right">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" cbutlass="button searchbutton"><i class="material-icons md-36">search</i></button></li>
-    </ul>
-        </nav>
-<div class="top-bar topbar-logo " id="topbar-logo">
-
-  <div class="top-bar-logo" >
-    <a href="#"><img src="{{ base }}/images/logo-SCAC.svg" alt="" /></a>
-    <div>export-forum.com</div>
-  </div>
-
-    <nav class="top-bar-left">
-    <ul class="menu vertical medium-horizontal" >
-      <li><a href="#">AFRICA</a></li>
-      <li><a href="#">AMERCIAS</a></li>
-      <li><a href="#">ASIA PACIFIC</a></li>
-        <li><a href="#">EUROPE</a></li>
-    </ul>
-  </nav>
-
-</div>
-
-<!-- /medium and larger nav bar -->
 
 
 

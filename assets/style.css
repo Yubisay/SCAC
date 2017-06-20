@@ -1,0 +1,426 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* ESTO YA ESTABA AQUI*/
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/******************************
+ GENERAL
+ ******************************/
+
+html{
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: lighter;
+}
+
+i{
+color:#0a93b5;
+}
+
+.light-blue.lighten-1{
+background:white!important;}
+
+.page-footer{
+background-color:#0a93b5;
+}
+
+h1{
+font-size: 2.2rem!important;
+line-height:2rem
+}
+
+ a {
+color:#444344;
+	}
+
+ a:hover {
+color:#06a2c9!important
+	}	
+
+ul li a:hover {
+color:#06a2c9!important
+	}	
+
+
+.btn, .btn-large{
+background: white;
+color:#504d4c;
+font-size:1.2rem
+}
+
+.btn:hover, .btn-large:hover{
+color:#0a93b5;
+background: white
+}
+
+a:hover {
+color:#0a93b5;
+}
+
+
+/* slider */
+.slider .indicators{
+
+	}
+
+
+
+		/* continents */
+
+		.continents  {
+		background:#f2f2f2;
+		}
+
+		/*.continents  ul {
+		clear: both;
+		}
+
+		.continents img {
+		float:left;
+		}*/
+
+		.continents ul li  {
+		text-align:left!important;
+		}
+		.continents ul li a {
+		color:#444344!important;
+		padding-left:7px;
+
+		}
+
+		
+	
+	   /*REVISAR: creo que se puede cambiar el tono*/
+		.continents h6{
+		color:#898787;
+		}
+
+		#africa  ul li a {
+		border-left:3px solid #fab454
+		}
+		#americas  ul li a {
+		border-left: 3px solid #ef5d64
+		}
+		#asia  ul li a {
+		border-left: 3px solid #2f9fd1
+		}
+		#europe  ul li a {
+		border-left: 3px solid #64c3a8
+		}
+
+		#africa .btn-large,#africa h1 a:hover {
+		color:#fab454;
+		}
+		#americas .btn-large, #americas h1 a:hover {
+		color:#ef5d64
+		}
+		#asia .btn-large, #asia h1 a:hover {
+		color:#2f9fd1
+		}
+		#europe .btn-large, #europe h1 a:hover {
+		color:#64c3a8
+		}
+
+
+
+
+/******************************
+ MOBILE
+ ******************************/
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  		/* sticky mtop-bar */
+		nav.light-blue.lighten-1{
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+		}
+
+		.main{
+		padding-top:40px
+		}
+
+			/*footer*/
+		.page-footer li {
+		text-align: center;
+
+			}
+
+			
+	
+}
+
+	#logo-container{
+		padding-top:4px ;
+		}
+
+	
+
+
+	/* sticky mtop-bar fixed */
+	#sidenav-overlay {
+	margin-left: 300px;
+	z-index: 100
+	}
+
+	/* Side Menu */
+	ul.side-nav{
+	background:#0a93b5!important;
+	}
+
+	ul.side-nav li a{
+	color:white!important;
+	font-weight:lighter;
+	border-bottom:1px solid #96bed3;
+	}
+
+	ul.side-nav .title{
+	text-align: center;
+	background: white;
+	color:#0a93b5;
+	}
+
+	/* Search */
+	.mobile-search {
+	position: absolute;
+	 right:0px;
+	z-index: 1;
+	height: 55px;
+	background: white;
+	}
+
+	.mobile-search input[type=text] {
+    width: 20px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    background-color:white;
+    background-image: url(../images/search.svg););
+    background-position: 20px 15px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float:right;
+	}
+
+	.mobile-search input[type=text]:focus {
+   width: 320px;
+   top: 0;
+   position: absolute;
+   right:0px;
+   margin-top:5px
+	}
+
+
+
+
+/***********************
+ DESKTOP
+ ***********************/
+
+	@media only screen and (min-width: 993px){
+
+		/* general */
+
+		.brand-logo img{
+		width:110%	
+		}
+
+		
+		html .section{
+		font-size: 120%
+		}
+
+		.section{
+		padding-left:1rem;
+		padding-right:1rem
+		}
+
+		h1,h2,h3,h4,h5,h6{
+		font-weight: lighter;
+		}
+
+		h1{
+		line-height:3.1rem;
+		margin-top: 0;
+		}
+
+
+		/* contendedor ppal. margen laterales */
+		.container{
+		width:100%;
+		
+		
+		}
+
+		.continents img {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+		width: 70%
+		}
+
+		/* top bar*/
+		.light-blue.lighten-1{
+		height:137px
+		}
+
+
+		/* NAV */
+		#logo-container{
+		margin-top: 40px
+		}
+
+		nav li a {
+		color:black;
+		font-size: 1.3rem;color:#444344
+		}
+
+		nav li a:hover {
+		background:white;
+		color:#0a93b5
+		}
+
+		.main-nav li a{
+		font-size:1.2rem;
+		line-height:30px;	
+		}
+
+		.main-nav li a {  padding:1px}
+		.main-nav li a:before { content:' / ';color:#444344;padding-left:10px;padding-right: 10px }
+		.main-nav li:first-child a:before { content:'';}
+
+		.main-nav .language a{ 
+		font-size:0.9rem!important
+		}
+
+
+		/* footer */
+
+		.page-footer{
+		background:white;
+		border-top: 1px solid #445e75
+		}
+
+		.page-footer p{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		}
+
+		.page-footer h5 img{
+		opacity: 0.6;
+		
+		}
+
+
+		.page-footer li a{
+		color:inherit!important;
+		line-height:1.9;
+		}
+
+
+		.footer-copyright{
+		color:inherit!important;
+		background: url(../images/logo-transparencyinternational.png) no-repeat right
+
+		}
+
+
+
+	}
+
+
+
+		/*slider*/
+		.slider{
+		top:-10px;
+		height:367px!important
+		}
+
+		/*REVISAR: quizas no es necesario*/
+		.slider .slides li{
+		background: white
+		}
+		.slider .slides li img{
+		max-height: 367px
+		}
+
+		.slider  h3{
+		 line-height:50%
+		}   
+
+		/* REVISAR: haz prueba esto podria no esta haciendo nada */
+		#content-nav{
+		padding-top:30px
+		}
+
+		/* Search */
+		nav .input-field input{
+		border-bottom: 1px solid #ccc
+		}
+
+		nav .input-field label i{
+		color:#ccc;
+		font-size:30px
+		}
+
+		.input-field input[type=search]{
+		padding-top:21px
+		}
+
+
+
+		/******************
+		 iPad Air 2 - Ipad
+		 *****************/
+		@media screen and (min-width: 1024px){
+
+				#content-nav{
+				padding-top:0px!important;
+				}
+
+
+		}
+
+
+		/*@media screen and (max-width: 1024px){
+
+				.container{
+				padding-left: 10%;
+				border:1px solid green;
+				}
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

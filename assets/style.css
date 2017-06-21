@@ -19,43 +19,92 @@
  ******************************/
 
 html{
-font-family: 'Roboto Condensed', sans-serif;
 font-weight: lighter;
+font-family: 'Roboto Condensed', sans-serif;
 }
+
 
 i{
 color:#0a93b5;
 }
 
-.light-blue.lighten-1{
-background:white!important;}
-
 .page-footer{
 background-color:#0a93b5;
 }
 
-h1{
-font-size: 2.2rem!important;
-line-height:2rem
+		/*h1{
+		font-size: 3.1rem!important;
+		line-height:3.1rem
+		}*/
+
+		h1,h2,h3,h4,h5,h6{
+			font-weight: lighter;
+
+		}
+
+		h1 {
+		  font-size: 3.3rem;
+		  line-height: 110%;
+		  margin: 1.3rem 0;
+		}
+
+		h2 {
+		  font-size: 3rem;
+		  line-height: 110%;
+		  margin: 1rem 0
+		}
+
+		h3 {
+		  font-size: 2.7rem;
+		  line-height: 110%;
+		  margin:0.9rem 0
+		}
+
+		h4 {
+		  font-size: 2.3rem;
+		  line-height: 110%;
+		  margin:0.7rem 0
+		}
+
+		h5 {
+		  font-size: 1.9rem;
+		  line-height: 110%;
+		  margin:0.5rem
+		}
+
+		h6 {
+		  font-size: 1.5rem;
+		  line-height: 110%;
+		  margin:0.3rem
+		}
+
+a{
+text-decoration: underline;
 }
 
- a {
-color:#444344;
-	}
+a:hover{
+color:#0fb3db;
+}
 
- a:hover {
-color:#06a2c9!important
-	}	
+.active a{
+background:white!important;
+color:#0b93b1!important
+}
 
-ul li a:hover {
-color:#06a2c9!important
-	}	
 
+.page-footer a, .nav-wrapper a{
+text-decoration: none
+}
+	
+
+ol li{
+list-style-type:inherit!important;
+}
 
 .btn, .btn-large{
 background: white;
 color:#504d4c;
-font-size:1.2rem
+font-size:1.3rem
 }
 
 .btn:hover, .btn-large:hover{
@@ -63,17 +112,27 @@ color:#0a93b5;
 background: white
 }
 
-a:hover {
-color:#0a93b5;
+blockquote{
+border-color:#0a93b5;
 }
 
+		/* Title section + breadcrumbs*/
+		.nav-section{
+		background:#0fb3db;
+		margin-top:5px;
+		height: 100px;
+		padding-top:2%
+		}
 
-/* slider */
-.slider .indicators{
+		.nav-section h1{
+		font-size: 
 
-	}
+		}
 
+		.nav-section a:hover{
+		color:white;
 
+		}
 
 		/* continents */
 
@@ -95,10 +154,14 @@ color:#0a93b5;
 		.continents ul li a {
 		color:#444344!important;
 		padding-left:7px;
+		text-decoration:none
 
 		}
 
-		
+		.continents ul li a:hover {
+		color:#06a2c9!important
+
+		}
 	
 	   /*REVISAR: creo que se puede cambiar el tono*/
 		.continents h6{
@@ -142,22 +205,26 @@ color:#0a93b5;
 
 @media only screen and (max-width: 600px) {
   
+
+  		.container{
+  		width: 95%
+
+  		}
   		/* sticky mtop-bar */
-		nav.light-blue.lighten-1{
+		nav.top-nav{
 		position: fixed;
 		width: 100%;
 		z-index: 100;
 		}
 
-		.main{
+		#mainwrap{
 		padding-top:40px
 		}
 
 			/*footer*/
 		.page-footer li {
 		text-align: center;
-
-			}
+		}
 
 			
 	
@@ -275,7 +342,7 @@ color:#0a93b5;
 		}
 
 		/* top bar*/
-		.light-blue.lighten-1{
+		nav.top-nav{
 		height:137px
 		}
 
@@ -292,15 +359,15 @@ color:#0a93b5;
 
 		nav li a:hover {
 		background:white;
-		color:#0a93b5
+		color:#0fb3db
 		}
 
 		.main-nav li a{
 		font-size:1.2rem;
-		line-height:30px;	
+		line-height:30px;
+		padding:1px	
 		}
 
-		.main-nav li a {  padding:1px}
 		.main-nav li a:before { content:' / ';color:#444344;padding-left:10px;padding-right: 10px }
 		.main-nav li:first-child a:before { content:'';}
 
@@ -323,13 +390,16 @@ color:#0a93b5;
 
 		.page-footer h5 img{
 		opacity: 0.6;
-		
 		}
 
 
 		.page-footer li a{
 		color:inherit!important;
 		line-height:1.9;
+		}
+
+		.page-footer li a:hover{
+		color:#0fb3db!important
 		}
 
 
@@ -342,14 +412,19 @@ color:#0a93b5;
 
 
 	}
+		.slider{
+		height: 400px!important;
+		margin-top: 5px
+		}
 
-
-
-		/*slider*/
+		.slider .indicators{
+			display: none
+		}
+		/*slider
 		.slider{
 		top:-10px;
 		height:367px!important
-		}
+		}*/
 
 		/*REVISAR: quizas no es necesario*/
 		.slider .slides li{
@@ -359,7 +434,7 @@ color:#0a93b5;
 		max-height: 367px
 		}
 
-		.slider  h3{
+		.slider  h2{
 		 line-height:50%
 		}   
 

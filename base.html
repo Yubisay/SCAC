@@ -1,0 +1,158 @@
+---
+---
+
+{% include base.html %}
+
+
+
+ <nav class="nav-section" >
+    <div class="nav-wrapper" >
+      <div class="container" >
+        
+        <div class="col s12 left"><h1>SECTION TITLE</h1></div>
+          
+          <div class="col s12 right hide-on-small-only" >
+            <a href="#!" class="breadcrumb">HOME</a>
+            <a href="#!" class="breadcrumb">Section Title</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- CONTENT -->
+  <div class="container">
+
+
+
+
+    <div class="section" >
+      <div class="row" >
+      <div  class="col s12" >
+      <h1>Title H1</h1>
+      <hr>
+      <h2 class="cyan-text darken-2">Title H2</h2> 
+      <h3>Title H3</h3> 
+      <h4>Title H4</h4> 
+      <h5>Title H5</h5> 
+      <h6>Title H6</h6> 
+
+
+<hr>
+      <h2>Text Content</h2>
+      <p>Use HTML text content elements to organize blocks or sections of content placed between the opening <body> and closing </body> tags. Important for accessibility and SEO, these elements identify the purpose or structure of that content. </p>
+
+
+      <p><a href="#">The HTML a element (or anchor element)</a></br>
+       creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.
+      </p>
+
+       </br>
+
+           <p><i>The HTML i element </i></br>
+      represents a range of text that is set off from the normal text for some reason, for example, technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type.</br>
+      
+      Use this element only when there is not a more appropriate semantic element. For example:</br>
+        <ul>
+        <li>-Use <em>em</em> to indicate emphasis or stress.</em></li>
+        <li>-Use <strong>strong</strong> to indicate importance.</strong></li>
+        <li>-Use <mark>mark</mark> to indicate relevance.</mark></li>
+        <li>-Use <cite>cite</cite> to mark the name of a work, such as a book, play, or song.</li>
+        <li>-Use <dfn>dfn</dfn> to mark the defining instance of a term.</li>
+        </ul>
+      </p>
+
+      </br>
+
+      <p><strong>The HTML STRONG element</strong></br>
+      gives text strong importance, and is typically displayed in bold.</br>
+
+      <strong>strong</strong> is a logical state, and <b>bold</b> is a physical state. Logical states separate presentation from the content, and by doing so allow for it to be expressed in many different ways. Perhaps instead of rendering some text as bold you want to render it red, or a different size, or underlined, or whatever. It makes more sense to change the presentational properties of strong than it does bold. This is because bold is a physical state; there is no separation of presentation and content, and making bold do anything other than bold text would be confusing and illogical.<br/>
+
+      It is important to note that <b>bold</b> does have other uses, when one wants to draw attention without increasing importance.<br/>
+
+      In HTML5, the element is described as representing <strong>"strong importance for its contents."</strong> This is an important distinction to make. While Emphasis is used to change the meaning of a sentence ("I love carrots" vs. "I love carrots"), Strong is used to give portions of a sentence added importance (e.g.,<strong> "Warning!</strong> This is <strong>very dangerous.</strong>") Both Strong and Emphasis can be nested to increase the relative degree of importance or stress emphasis, respectively.</p>
+
+
+      </br>
+
+        <p><mark class="lime accent-1">The HTML MARK element</mark></br>
+       represents highlighted text, i.e., a run of text marked for reference purpose, due to its relevance in a particular context.</br>
+
+      In a quotation or another block, the highlighted text typically marks text that is referenced outside the quote, or marked for specific scrutiny even though the original author didn't consider it important.
+      In the main text, the highlighted text typically marks text that may be of special relevance for the user's current activity, like search results.</br>
+      Do not use the MARK element for syntax highlighting; use the SPAN element for this purpose.</br>
+      Do not confuse the MARK element with the <strong>STRONG</strong> element. The STRONG element is used to denote spans of text of importance in context of the text, when the MARK element is used to denote spans of text of relevance to a different context.</br>
+
+      <ul>
+        <li ><mark class="lime accent-1">class: lime accent-1</mark></li>
+        <li ><mark class="light-blue lighten-4">class: light-blue lighten-4</mark></li>
+        <li ><mark class="cyan accent-1">class: cyan accent-1</mark></li>
+        <li ><mark class="green lighten-4">class: green lighten-4</mark></li>
+        <li ><mark class="orange lighten-4">class: corange lighten-4</mark></li>
+        <li ><mark class="pink lighten-4">class: pink lighten-4</mark></li>
+        
+      </ul>
+
+
+      </p>
+
+
+       </br>
+
+       <p><blockquote>The HTML BLOCKQUOTES Element (or HTML Block Quotation Element)</blockquote>
+       indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <cite>cite</cite> element.</br>
+     
+      The HTML BLOCKQUOTES Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation . A URL for the source of the quotation may be given using the CITE attribute, while a text representation of the source can be given using the CITE element.  
+      </p>
+
+
+      </br>
+
+      <p><q>The HTML q element</q></br>
+       indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the BLOCKQUOTES element.  
+      </p>
+
+      </br>
+
+  
+      <p><cite>The HTML cite element</cite></br>
+      represents a reference to a creative work. It must include the title of a work or a URL reference, which may be in an abbreviated form according to the conventions used for the addition of citation metadata.</p>
+
+
+      </br>
+
+      <p><code>The HTML code </code></br>
+      element represents a fragment of computer code. By default, it is displayed in the browser's default monospace font.</p>
+      
+      </br>
+
+      <p><em>The HTML EM element</em></br>
+       marks text that has stress emphasis. The EM element can be nested, with each level of nesting indicating a greater degree of emphasis.</p>
+
+       </br>
+
+       <p><small>The HTML SMALL element</small></br> makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.  In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation.  
+       </p>
+
+       </br>
+
+       <p><u>The HTML U element</u></br>
+       renders text with an underline, a line under the baseline of its content. In HTML5, this element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelled.</p>
+      
+      </div>
+      
+        </br>
+        <hr> 
+      Source:<a href="https://developer.mozilla.org/en/docs/Web/HTML/Element"> Mozilla.org | Text content</a>
+     
+    
+
+
+
+
+      </div>
+    </div>
+  </div>

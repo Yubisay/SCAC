@@ -20,5 +20,14 @@ $(".dropdown-button").dropdown();
     });
         
 
-/**Slider carrousel **/
+/**Slider carrousel  ---no en uso **/
  $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+
+
+ /** Collapsible*/
+
+    $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+        

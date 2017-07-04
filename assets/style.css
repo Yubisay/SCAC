@@ -245,20 +245,25 @@ border-color:#0a93b5;
 	z-index: 100
 	}
 
-	/* Side Menu */
+	/* Side Menu 
 	ul.side-nav{
 	background:#0a93b5!important;
-	}
+	}*/
 
 	ul.side-nav li a{
-	color:white!important;
 	font-weight:lighter;
-	border-bottom:1px solid #96bed3;
+	border-bottom:1px solid #ccc;
 	}
+
+	ul.side-nav li a:hover{
+	background:#0fb3db;
+	color:white!important;
+	}
+
+
 
 	ul.side-nav .title{
 	text-align: center;
-	background: white;
 	color:#0a93b5;
 	}
 

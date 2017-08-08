@@ -20,14 +20,16 @@ $(".dropdown-button").dropdown();
     });
         
 
-/**Slider carrousel  ---no en uso **/
- $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 
 
  /** Collapsible*/
 
-    $(document).ready(function(){
+   $(document).ready(function(){
     $('.collapsible').collapsible();
   });
         
+/** carrousel */
+  $(document).ready(function(){
+      $('.carousel').carousel();
+    });

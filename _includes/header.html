@@ -1,75 +1,82 @@
 
-<!-- mobile nav bar -->
 
-<div class="top-bar-container" data-sticky-container>
-    <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+<header>
 
-        <div class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-logo" data-hide-for="medium" style="height:100px">
-    <div class="title-bar-left">
-    <button class="menu-icon" type="button" data-toggle="topbar-logo"></button>
-    </div>
+    <nav class="white top-nav" role="navigation">
+      <div class="nav-wrapper container">
 
-<div  style="border:1px solid;margin:0 auto;margin-top:50px;width:60%;"> AQUI DEBERIA IR SEARCH</div>
+      <a id="logo-container" href="#" class="brand-logo">
+      <img src="{{ base }}/images/logo-SCAC.svg">
+      </a>
 
-</div>
-
-    </div></div>
-
-
-
-<div class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-logo" data-hide-for="medium" style="height:100px">
-    <div class="title-bar-left">
-    <button class="menu-icon" type="button" data-toggle="topbar-logo"></button>
-    </div>
-
-<div  style="border:1px solid;margin:0 auto;margin-top:50px;width:60%;"> AQUI DEBERIA IR SEARCH</div>
-
-</div>
-
-<!-- /mobile nav bar -->
+        <ul class="main-nav right hide-on-med-and-down"  style="clear: right;" >
+          <li><a href="index.html" >HOME</a></li>
+          <li><a href="whoarewe.html">ABOUT US</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="web-advertising.html">ADVERTISE WITH US</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li class="language active" > <a href="#">ENGLISH</a></li>
+          <li class="language"><a href="#">FRANÇAIS</a></li>
+        </ul>
 
 
-<!-- medium and larger nav bar -->
-<div class="top-bar topbar-logo " id="topbar-logo">
-  <div class="top-bar-logo" style="" >
-    <a href="#"><img src="{{ base }}/images/logo-SCAC.svg" alt="" /></a>
-    <div>export-forum.com</div>
-  </div>
+        <ul class="main-nav right hide-on-med-and-down" style="clear: right;" >
+          <li><a href="#">RECENT OFFERS</a></li>
+          <li><a href="#">ADD YOUR OFEER </a></li>
+        </ul>
 
-    <nav class="top-bar-left">
-    <ul class="menu vertical medium-horizontal" >
-      <li><a href="#">AFRICA</a></li>
-      <li><a href="#">AMERCIAS</a></li>
-      <li><a href="#">ASIA PACIFIC</a></li>
-        <li><a href="#">EUROPE</a></li>
-    </ul>
-  </nav>
+        <ul id="content-nav" class="left hide-on-med-and-down" style="margin-left: 130px">
+          <li><a href="#">AFRICA</a></li>
+          <li><a href="#">AMERICAS</a></li>
+          <li><a href="#">ASIA-PACIFIC</a></li>
+          <li><a href="#">EUROPE</a></li>
+        </ul>
+    
+        
+        <div class="right hide-on-med-and-down " style=";line-height: 14px; clear: right;width:25%;
+        padding: 0" >
+        
+        <form>
+        <div class="input-field">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label> 
+        </div>
+        </form>
+        </div>
 
-  <nav class="top-bar-right" >
+  
+        <ul id="nav-mobile" class="side-nav">
+           <li class="title" style="background: url('images/bollard-SCAC-mobile.jpg');padding:50px 0;
+           color:white"><h5>SCAC Network</h5></li>
+          <li><a href="#">AFRICA</a></li>
+          <li><a href="#">AMERICAS</a></li>
+          <li><a href="#">ASIA-PACIFIC</a></li>
+          <li><a href="#">EUROPE</a></li>
+          <li> &nbsp;</li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="whoarewe.html">ABOUT US</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="#">ADVERTISE WITH US</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="#">RECENT OFFERS</a></li>
+          <li><a href="#">ADD YOUR OFEER </a></li>
+           <li> &nbsp;</li>
+            <li><a href="#">ADD YOUR OFEER </a></li>     
+        </ul>
+     
+     
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+         <div id="nav-mobile " class="right hide-on-large-only " >
+         <form class="mobile-search">
+         <input  type="text" name="search" placeholder="search">
+         </form>
+         </div>
 
-  <ul class="menu vertical medium-horizontal">
-      <li class="active"  ><a href="#" >HOME</a></li>
-      <li><a href="#">WHO WE ARE</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">ADVERTISE WITH US</a></li>
-      <li><a href="#" class="last">CONTACT US</a></li>
-      <li class="lang active"><a  href="#">ENGLISH</a></li>
-      <li class="last lang"><a   href="#">FRANCAIS</a></li>
-    </ul>
+      </div>
+    </nav>
 
-       <ul class="menu align-right" >
-      <li  class="last"><a href="#">ADD YOUR OFEER</a></li>
-    <li><a href="#" >RECENT OFFERS</a></li>
-       </ul>
+</header>
 
 
-      <!-- /search -->
-          <div class="search-input-animated" style="border:1px solid blue">
 
-            <span class="searchbox-icon"><i class="fi-magnifying-glass"></i></span>
-            <input type="search" placeholder="Search" name="search" class="searchbox-input" required>
-          </div>
-        </nav>
-</div>
 
-<!-- /medium and larger nav bar -->

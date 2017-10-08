@@ -23,10 +23,10 @@ font-weight: lighter;
 font-family: 'Roboto Condensed', sans-serif;
 }
 
-
+/* esto lo estoy ELIMINAR para poner color-css dierecto en html
 i{
 color:#0a93b5;
-}
+}*/
 
 .gallery img{
 	border:1px solid #ccc;
@@ -51,13 +51,25 @@ font-size:1.2rem
    }
 
 
- 
-
-
 
 
 .page-footer{
 background-color:#0a93b5;
+}
+
+
+a.backtop-button {
+	background:#087c98!important;
+	border:none;
+	
+}
+
+.active a.backtop-button  {
+	background:#35bcdd!important
+}
+
+.btn-floating i{
+	font-size:3.2rem!important
 }
 
 
@@ -67,31 +79,31 @@ background-color:#0a93b5;
 		}
 
 		h1 {
-		  font-size: 3.3rem;
+		  font-size: 3rem;
 		  line-height: 110%;
 		  margin: 1.3rem 0
 		}
 
 		h2 {
-		  font-size: 3rem;
+		  font-size: 2.7rem;
 		  line-height: 110%;
 		  margin: 1rem 0
 		}
 
 		h3 {
-		  font-size: 2.7rem;
+		  font-size: 2.3rem;
 		  line-height: 110%;
 		  margin:0.9rem 0
 		}
 
 		h4 {
-		  font-size: 2.3rem;
+		  font-size: 2rem;
 		  line-height: 110%;
 		  margin:0.7rem 0
 		}
 
 		h5 {
-		  font-size: 1.9rem;
+		  font-size: 1.8rem;
 		  line-height: 110%;
 		  margin:0.5rem 0
 		}
@@ -134,8 +146,8 @@ border:1px solid #eae9e9;
 }
 
 .btn:hover, .btn-large:hover{
-color:#0a93b5;
-background: white;
+color:white;
+background: #35bcdd;
 }
 
 article{ margin-bottom: 5% }
@@ -170,13 +182,9 @@ border-color:#0a93b5;
 		background:#f2f2f2;
 		}
 
-		/*.continents  ul {
-		clear: both;
+		.continents .btn-large:hover{
+			background:#f2f2f2
 		}
-
-		.continents img {
-		float:left;
-		}*/
 
 		.continents ul li  {
 		text-align:left!important;
@@ -295,7 +303,6 @@ border-color:#0a93b5;
     width: 20px;
     box-sizing: border-box;
     border: 0;
-    border-radius: 4px;
     background-color:white;
     background-image: url(../images/search.svg););
     background-position: 20px 15px; 
@@ -304,6 +311,7 @@ border-color:#0a93b5;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     float:right;
+    color:black;
 	}
 
 	.mobile-search input[type=text]:focus {
@@ -311,7 +319,8 @@ border-color:#0a93b5;
    top: 0;
    position: absolute;
    right:0px;
-   margin-top:5px
+   margin-top:5px;
+   border-bottom: 2px solid #0288d1;
 	}
 
 

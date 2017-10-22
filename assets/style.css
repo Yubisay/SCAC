@@ -483,21 +483,27 @@ border-color:#0a93b5;
 
 		/* REVISAR: haz prueba esto podria no esta haciendo nada */
 		#content-nav{
-		padding-top:30px
+			padding-top:30px
 		}
 
 		/* Search */
-		nav .input-field input{
-		border-bottom: 1px solid #ccc
+		.gsc-search-box {
+			margin-top: 21px;
+		}
+		.gsc-search-box input{
+			color: #333;
+			border-bottom: 1px solid #ccc;
+			background: none!important;
 		}
 
-		nav .input-field label i{
-		color:#ccc;
-		font-size:30px
+		.gsc-search-box label i{
+			color:#ccc;
+			font-size:30px
 		}
 
-		.input-field input[type=search]{
-		padding-top:21px
+		.gsc-search-box td {
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 
 

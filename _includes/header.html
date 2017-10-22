@@ -7,63 +7,87 @@
     <img src="{{ base }}/images/logo-SCAC.svg">
     </a>
 
-      {% include menu.html %}
-      <!--
-      <ul class="main-nav right hide-on-med-and-down"  style="clear: right;" >
-        <li><a href="index.html" >HOME</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="advertising.html">ADVERTISE WITH US</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li class="language active" > <a href="#">ENGLISH</a></li>
-        <li class="language"><a href="#">FRANÇAIS</a></li>
-      </ul>
+    <ul class="main-nav right hide-on-med-and-down menu">
+      {% include menu-item.html ref='home' %}
+      {% include menu-item.html ref='about' %}
+      {% include menu-item.html ref='faq' %}
+      {% include menu-item.html ref='advertising' %}
+      {% include menu-item.html ref='contact' %}
+      {% if include.nolang != true %}
+      {% if lang != 'en' %}
+      <li class="language">
+      <a class="menu-item" href="{% include t-link ref=page.ref lang='en' %}">
+      </a>
+      </li>
+      {% elsif lang != 'fr' %}
+      <li class="language">
+      <a class="menu-item" href="{% include t-link ref=page.ref lang='fr' %}">
+      </a>
+      </li>
+      {% endif %}
+      {% endif %}
+    </ul>
 
+    <ul class="menu main-nav right hide-on-med-and-down" style="clear: right;" >
+      {% include menu-item.html ref='offers' %}
+      {% include menu-item.html ref='add-offer' %}
+    </ul>
 
-      <ul class="main-nav right hide-on-med-and-down" style="clear: right;" >
-        <li><a href="#">RECENT OFFERS</a></li>
-        <li><a href="#">ADD YOUR OFFER </a></li>
-      </ul>
+    <ul id="content-nav" class="menu content-nav left hide-on-med-and-down" style="margin-left: 130px">
+      {% include menu-item.html ref='africa' %}
+      {% include menu-item.html ref='americas' %}
+      {% include menu-item.html ref='asia-pacific' %}
+      {% include menu-item.html ref='europe' %}
+    </ul>
 
-      <ul id="content-nav" class="left hide-on-med-and-down" style="margin-left: 130px">
-        <li><a href="#">AFRICA</a></li>
-        <li><a href="#">AMERICAS</a></li>
-        <li><a href="#">ASIA-PACIFIC</a></li>
-        <li><a href="#">EUROPE</a></li>
-      </ul>
-      -->
 
       <div class="right hide-on-med-and-down " style=";line-height: 14px; clear: right;width:25%;
       padding: 0" >
 
+      <!--
       <form>
       <div class="input-field">
-      <input id="search" type="search" required>
+      <input id="search" type="search" required action="">
       <label class="label-icon" for="search"><i class="material-icons">search</i></label>
       </div>
       </form>
+    -->
+    <!-- https://developers.google.com/custom-search/docs/element#introduction -->
+        <gcse:searchbox-only gname="scacsearch" resultsUrl="http://www.export-forum.com" newWindow="true" queryParameterName="search">
+
+
       </div>
 
 
-      <ul id="nav-mobile" class="side-nav">
-         <li class="title" style="background: url('images/bollard-SCAC-mobile.jpg');padding:50px 0;
-         color:white"><h5>SCAC Network</h5></li>
-        <li><a href="#">AFRICA</a></li>
-        <li><a href="#">AMERICAS</a></li>
-        <li><a href="#">ASIA-PACIFIC</a></li>
-        <li><a href="#">EUROPE</a></li>
+      <ul id="nav-mobile" class="side-nav right hide-on-med-and-down menu">
+        <li class="title" style="background: url('images/bollard-SCAC-mobile.jpg');padding:50px 0; color:white"><h5>SCAC Network</h5></li>
+        {% include menu-item.html ref='africa' %}
+        {% include menu-item.html ref='americas' %}
+        {% include menu-item.html ref='asia-pacific' %}
+        {% include menu-item.html ref='europe' %}
         <li> &nbsp;</li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="whoarewe.html">ABOUT US</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="#">ADVERTISE WITH US</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li><a href="#">RECENT OFFERS</a></li>
-        <li><a href="#">ADD YOUR OFEER </a></li>
-         <li> &nbsp;</li>
-          <li><a href="#">ADD YOUR OFEER </a></li>
+        {% include menu-item.html ref='home' %}
+        {% include menu-item.html ref='about' %}
+        {% include menu-item.html ref='faq' %}
+        {% include menu-item.html ref='advertising' %}
+        {% include menu-item.html ref='contact' %}
+        {% include menu-item.html ref='offers' %}
+        {% include menu-item.html ref='add-offer' %}
+        {% include menu-item.html ref='add-offer' %}
+        {% if include.nolang != true %}
+        {% if lang != 'en' %}
+        <li class="language">
+        <a class="menu-item" href="{% include t-link ref=page.ref lang='en' %}">
+        </a>
+        </li>
+        {% elsif lang != 'fr' %}
+        <li class="language">
+        <a class="menu-item" href="{% include t-link ref=page.ref lang='fr' %}">
+        </a>
+        </li>
+        {% endif %}
+        {% endif %}
       </ul>
-
 
       <a href="#" data-activates="nav-mobile" class="button-collapse">
       <i class="material-icons light-blue-text text-darken-2">menu</i></a>

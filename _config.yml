@@ -1,4 +1,4 @@
-title: "SCAC - Network Limited"
+title: "SCAC − Network Limited"
 
 email: say.arts@gmail.com
 
@@ -192,3 +192,30 @@ prose:
           label: "Nofollow"
           help: "Block crawler following the page"
           value: false
+
+t:
+  en:
+    home: "Home"
+    about: "About us"
+    faq: "FAQ"
+    advertising: "Advertise with us"
+    contact: "Contact us"
+    offers: "Recent offers"
+    add-offer: "Add your offer"
+    africa: "Africa"
+    americas: "Americas"
+    asia-pacific: "Asia-Pacific"
+    europe: "Europe"
+  fr:
+    home: "Home"
+    about: "About us"
+    faq: "FAQ"
+    advertising: "Advertise with us"
+    contact: "Contact us"
+    offers: "Recent offers"
+    add-offer: "Add your offer"
+    africa: "Africa"
+    americas: "Americas"
+    asia-pacific: "Asia-Pacific"
+    europe: "Europe"
+

@@ -1,27 +1,26 @@
 <!doctype html>
 
 {% include base.html %}
+{% assign lang=page.lang | default: 'en' %}
 
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-js" lang="{{ lang }}" dir="ltr">
   <head>
     {% include head.html%}
   </head>
 
   <body>
-
     {% include header.html %}
 
-<div id="mainwrap">
-    {{ content }}
-</div>
+    <div id="mainwrap">
+      {{ content }}
+    </div>
 
     {% include footer.html %}
 
-
-<!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="{{ base }}/assets/materialize.js"></script>
-  <script src="{{ base }}/assets/init.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{{ base }}/assets/materialize.js"></script>
+    <script src="{{ base }}/assets/init.js"></script>
 
   </body>
 </html>

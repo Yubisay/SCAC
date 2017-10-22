@@ -1,0 +1,4 @@
+{% assign link = include.ref %}
+<li class="menu-item {% if page.ref == link or links contains page.ref %} menu-item--active{% endif %}">
+	<a class="menu-link" href="{% include t-link ref=link %}">{{ site.t[lang][ref] }}</a>
+</li>

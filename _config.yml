@@ -2,8 +2,8 @@ title: "SCAC − Network Limited"
 
 email: say.arts@gmail.com
 
-description: ""
-baseurl: ""
+description: ''
+baseurl: ''
 
 url: "https://yubisay.github.io/scac"
 
@@ -16,7 +16,7 @@ kramdown:
 
 defaults:
     - scope:
-        path: ""
+        path: ''
       values:
         layout: "default"
 

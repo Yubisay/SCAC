@@ -13,19 +13,16 @@
       {% include menu-item.html ref='faq' %}
       {% include menu-item.html ref='advertising' %}
       {% include menu-item.html ref='contact' %}
-      {% if include.nolang != true %}
-      {% if lang != 'en' %}
-      <li class="language">
-      <a class="menu-item" href="{% include t-link ref=page.ref lang='en' %}">
+
+      <li class="language menu-item{% if lang == 'en' %} menu-item--active{% endif %}">
+      <a class="" href="{% include t-link ref=page.ref lang='en' %}">English
       </a>
       </li>
-      {% elsif lang != 'fr' %}
-      <li class="language">
-      <a class="menu-item" href="{% include t-link ref=page.ref lang='fr' %}">
+      <li class="language menu-item{% if lang == 'fr' %} menu-item--active{% endif %}">
+      <a class="" href="{% include t-link ref=page.ref lang='fr' %}">Français
       </a>
       </li>
-      {% endif %}
-      {% endif %}
+
     </ul>
 
     <ul class="menu main-nav right hide-on-med-and-down" style="clear: right;" >
@@ -64,7 +61,6 @@
 
 
       </div>
-
       <ul id="nav-mobile" class="side-nav right hide-on-med-and-down menu">
         <li class="title" style="background: url('images/bollard-SCAC-mobile.jpg');padding:50px 0; color:white"><h5>SCAC Network</h5></li>
         {% include menu-item.html ref='africa' %}
@@ -80,19 +76,16 @@
         {% include menu-item.html ref='offers' %}
         {% include menu-item.html ref='add-offer' %}
         {% include menu-item.html ref='add-offer' %}
-        {% if include.nolang != true %}
-        {% if lang != 'en' %}
-        <li class="language">
-        <a class="menu-item" href="{% include t-link ref=page.ref lang='en' %}">
+
+        <li class="language menu-item{% if lang == 'en' %} menu-item--active{% endif %}">
+        <a class="" href="{% include t-link ref=page.ref lang='en' %}">English
         </a>
         </li>
-        {% elsif lang != 'fr' %}
-        <li class="language">
-        <a class="menu-item" href="{% include t-link ref=page.ref lang='fr' %}">
+        <li class="language menu-item{% if lang == 'fr' %} menu-item--active{% endif %}">
+        <a class="" href="{% include t-link ref=page.ref lang='fr' %}">Français
         </a>
         </li>
-        {% endif %}
-        {% endif %}
+
       </ul>
 
       <a href="#" data-activates="nav-mobile" class="button-collapse">

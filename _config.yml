@@ -100,6 +100,10 @@ t:
     americas: "Americas"
     asia-pacific: "Asia-Pacific"
     europe: "Europe"
+    sitemap: "Site map"
+    privacy: "Privacy & jurisdictional clause"
+    documentation: "Trade documentation"
+    webmaster: "Web Site Administrator"
   fr:
     home: "Home"
     about: "About us"

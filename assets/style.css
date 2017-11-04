@@ -432,10 +432,11 @@ border-color:#0a93b5;
 		.page-footer li a{
 		color:inherit!important;
 		line-height:1.9;
+		text-transform: uppercase;
 		}
 
-		.page-footer li a:hover{
-		color:#0fb3db!important
+		.page-footer li.menu-item a:hover, .page-footer li.menu-item.menu-item--active a{
+			color:#0fb3db!important;
 		}
 
 
@@ -487,6 +488,20 @@ border-color:#0a93b5;
 		}
 
 		/* Search */
+		nav .input-field input{
+		border-bottom: 1px solid #ccc
+		}
+
+		nav .input-field label i{
+		color:#ccc;
+		font-size:30px
+		}
+
+		.input-field input[type=search]{
+		padding-top:21px
+		}
+
+		/*
 		.search-form .label-icon {
 			display: inline-block;
 			vertical-align: top;
@@ -519,7 +534,7 @@ border-color:#0a93b5;
 		.gsc-search-box #gsc-i-id1 {
 			text-indent: 0px!important;
 		}
-
+		*/
 
 
 		/******************
